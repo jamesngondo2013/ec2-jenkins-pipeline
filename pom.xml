@@ -33,7 +33,7 @@
 				        <version>2.20.1</version>
 				        <configuration>
 				          <suiteXmlFiles>
-				            <suiteXmlFile>C:/Users/i350380/Documents/GitHub/Java-Selenium-Automation-Framework/E2EAutomationProject/suite/testng.xml</suiteXmlFile>
+				            <suiteXmlFile>E2EAutomationProject/suite/testng.xml</suiteXmlFile>
 				          </suiteXmlFiles>
 				        </configuration>
 				      </plugin>
