@@ -19,7 +19,11 @@ class BrowserDriverFactory {
 		log.info("Create driver: " + browser);
 
 		if (browser.equals("chrome")) {
-			System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
+			//System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
+			 ChromeOptions chromeOptions = new ChromeOptions();
+             chromeOptions.addArguments("--headless");
+             chromeOptions.addArguments("--no-sandbox");
 			return new ChromeDriver();
 		} else if (browser.equals("firefox")) {
 			System.setProperty("webdriver.gecko.driver", "src/main/resources/geckodriver.exe");
