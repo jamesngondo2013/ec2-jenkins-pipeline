@@ -20,7 +20,7 @@ import junit.framework.Assert;
 
 public class SignInPageTest extends TestUtilities {
 
-	// @Test(dataProvider="csvTestReader", dataProviderClass = CsvDataProvider.class)
+	 @Test(dataProvider="csvTestReader", dataProviderClass = CsvDataProvider.class)
 	public void loginCSVTest(Map<String, String> testData) {
 
 		System.err.println("Running Test=> " + this + " -> on thread [" + Thread.currentThread().getId() + "]");
@@ -61,7 +61,7 @@ public class SignInPageTest extends TestUtilities {
 
 	}
 
-	//@Test(dataProvider = "excelTestData", dataProviderClass = ExcelDataProvider.class)
+	@Test(dataProvider = "excelTestData", dataProviderClass = ExcelDataProvider.class)
 	public void loginTestExcelData(String username, String password) {
 
 		System.err.println("Running Test=> " + this + " -> on thread [" + Thread.currentThread().getId() + "]");
@@ -97,7 +97,7 @@ public class SignInPageTest extends TestUtilities {
 
 	}
 	
-	@Test(dataProvider = "databaseTestData", dataProviderClass = DBDataProvider.class)
+	//@Test(dataProvider = "databaseTestData", dataProviderClass = DBDataProvider.class)
 		public void loginTestDBData(String username, String password) {
 
 			System.err.println("Running Test=> " + this + " -> on thread [" + Thread.currentThread().getId() + "]");
@@ -135,7 +135,7 @@ public class SignInPageTest extends TestUtilities {
 
 		}
 	
-	//@Test(dataProvider = "SearchProvider", dataProviderClass = DBDataProvider.class)
+	// //@Test(dataProvider = "SearchProvider", dataProviderClass = DBDataProvider.class)
 	public void loginTest(String username, String password) {
 
 		System.err.println("Running Test=> " + this + " -> on thread [" + Thread.currentThread().getId() + "]");
@@ -162,7 +162,7 @@ public class SignInPageTest extends TestUtilities {
 
 
 
-	// @Test(dataProvider="csvTestReader", dataProviderClass =  csvDataProvider.class)
+	// // @Test(dataProvider="csvTestReader", dataProviderClass =  csvDataProvider.class)
 	public void ariba(Map<String, String> testData) {
 
 		// data extraction

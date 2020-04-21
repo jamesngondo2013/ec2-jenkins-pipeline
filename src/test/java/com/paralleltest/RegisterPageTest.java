@@ -12,7 +12,7 @@ public class RegisterPageTest extends BaseTest{
     ClickAcadamyLandingPage landing;
     ClickAcadamyRegisterPage reg;
 
-    @Test(dataProvider = "getData", dataProviderClass = DBDataProvider.class)
+    //@Test(dataProvider = "getData", dataProviderClass = DBDataProvider.class)
     public void registerUsingPageFactory (String username, String password)
     {
         // logger.info("registerUsingPageFactory");
