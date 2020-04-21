@@ -25,7 +25,7 @@ class BrowserDriverFactory {
 			 ChromeOptions chromeOptions = new ChromeOptions();
              chromeOptions.addArguments("--headless");
              chromeOptions.addArguments("--no-sandbox");
-			return new ChromeDriver();
+			return new ChromeDriver(chromeOptions);
 		} else if (browser.equals("firefox")) {
 			System.setProperty("webdriver.gecko.driver", "src/main/resources/geckodriver.exe");
 			FirefoxOptions options = new FirefoxOptions();
